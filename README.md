@@ -221,3 +221,29 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ---
 
 **⭐ If you found this analysis valuable, please star this repository!**
+
+
+## Lab 22: Clustering Economies
+
+### Problem
+Can unsupervised ML identify meaningful economic groupings of countries 
+using only development indicators — without knowing income labels?
+
+### Role
+Applied K-Means clustering and PCA visualization to World Bank WDI data 
+across 160+ countries and California Housing census tracts.
+
+### Implementation
+- Data: 10 World Bank indicators via wbgapi
+- Preprocessing: StandardScaler (z-score normalization)
+- Model: K-Means (K=4, random_state=42)
+- Evaluation: Elbow method + silhouette scores (K=2–10)
+- Visualization: PCA 2-component scatter + income group heatmap
+
+### Metrics
+- Silhouette score peaks at K=2, remains strong at K=4
+- K=4 clusters align substantially with World Bank income groups
+- California Housing extension: 3 geographic market segments identified
+
+### Extension
+Califor
